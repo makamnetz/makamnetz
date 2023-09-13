@@ -1,6 +1,6 @@
 # MakamNetz
 
-Our project, Turkish Music Makams: A Visual Exploration, aims to help people understand the relationship between Turkish makams. The project uses a variety of visual tools, including interactive diagrams, animations, and audio examples.
+Our project is a visual exploration, aims to help people understand the relationship between Turkish makams. The project uses a variety of visual tools, including interactive diagrams, animations, and audio examples.
 
 ## The Features
 
