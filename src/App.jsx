@@ -20,7 +20,7 @@ function App() {
   return (
     <Router>
       <div className='App'>
-        <Container>
+        <Container fluid>
           <Routes>
             <Route
               path='/'

@@ -9,7 +9,7 @@ function MakamNetworkScreen() {
     <>
       <AhenkNavbar />
       <div>MakamNetworkScreen</div>
-      <Container fluid='md'>
+      <Container fluid>
         <Row>
           <Col>
             <VerticalDropdown title={'makam 1'} />

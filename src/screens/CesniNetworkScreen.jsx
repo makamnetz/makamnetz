@@ -21,7 +21,7 @@ function CesniNetworkScreen({ routing, handleScreen, screen }) {
 
   return (
     <>
-      <Container  style={{ margin: 0 }}>
+      <Container fluid style={{ margin: 0 }}>
         <AhenkNavbar />
         <DimensionButtons handleScreen={handleScreen} />
         {screen === '2d' ? (

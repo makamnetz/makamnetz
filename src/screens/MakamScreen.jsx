@@ -99,9 +99,9 @@ function MakamScreen({ routing, handleScreen, screen }) {
   return (
     <div>
       {allMakams.length > 0 && (
-        <Container>
+        <Container fluid>
           <AhenkNavbar />
-          <Row className='my-3 d-flex justify-content-between'>
+          <Row className='my-3 d-flex justify-content-end'>
             <Col lg={2}>
               <MakamDropdownMenu
                 makamList={allMakams}
