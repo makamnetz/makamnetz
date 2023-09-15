@@ -5,6 +5,7 @@ import CesniNetworkScreen from './screens/CesniNetworkScreen'
 import MakamScreen from './screens/MakamScreen'
 import MakamNetworkScreen from './screens/MakamNetworkScreen'
 import { useState } from 'react'
+import AhenkNavbar from './components/Navbar'
 
 function App() {
   const [screen, setScreen] = useState('3d')
@@ -18,40 +19,31 @@ function App() {
   }
 
   return (
-    <Router>
-      <div className='App'>
-        <Container fluid>
+    <div className='App'>
+      <AhenkNavbar />
+      <Container fluid>
+        <Router>
           <Routes>
             <Route
               path='/'
               element={
                 <CesniNetworkScreen
-                  routing='https://recepgul82.pythonanywhere.com/cesni_all/?format=json'
                   handleScreen={handleScreen}
                   screen={screen}
                 />
               }
-              exact
             />
             <Route
-              path='/makam'
+              path='/makam/*'
               element={
-                <MakamScreen
-                  routing='https://recepgul82.pythonanywhere.com/makam_all/?format=json'
-                  handleScreen={handleScreen}
-                  screen={screen}
-                />
+                <MakamScreen handleScreen={handleScreen} screen={screen} />
               }
             />
-            <Route
-              path='/makam_network'
-              element={<MakamNetworkScreen />}
-              exact
-            />
+            <Route path='/makam_network' element={<MakamNetworkScreen />} />
           </Routes>
-        </Container>
-      </div>
-    </Router>
+        </Router>
+      </Container>
+    </div>
   )
 }
 
